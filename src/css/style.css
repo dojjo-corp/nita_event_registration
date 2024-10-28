@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  scroll-behavior: smooth;
+  --light-bg: #f6f2f2;
+  --light-bg-translucent: hsla(0, 0%, 85%, 0.755);
+  --dark-bg: #000000;
+  --light-text: #ffffff;
+  --dark-text: #000000;
+  --font-size-vl: 61px;
+  --font-size-xxxl: 49px;
+  --font-size-xxl: 39px;
+  --font-size-xl: 31px;
+  --font-size-lg: 25px;
+  --font-size-md: 20px;
+  --font-size-sm: 16px;
+  --font-size-xs: 13px;
+  --font-size-xxs: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid red; */
+}
+ /* *>* {
+  outline: 1px solid yellow
+ }
+ *>*>* {
+  outline: 1px solid green
+ } */
+
+/* BUTTONS */
+button,
+.btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  font-size: 13.3px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  /* margin: 10px 0; */
+}
+.btn-dark {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+.btn-group {
+  display: flex;
+  gap: 15px;
+}
+
+body {
+  font-family: "Inter";
+  /* background: url(../../assets/dg\ nita\ -\ i.jpeg) no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: slideshow;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  height: 100svh;
+  width: 100svw;
+}
+
+header {
+  background-color: var(--light-bg-translucent);
+  border: none;
+  border-radius: 0 0 40px 40px;
+  /* padding: 20px; */
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+}
+.logo-img {
+  border-right: 2px solid black;
+}
+.logo-text {
+  /* outline: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dark-text);
+}
+.nav-link:hover {
+  color: var(--dark-text-hover);
+}
+.nav-container > ul {
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+
+/* HERO SECTION */
+#hero-section {
+  height: calc(100svh - 86px);
+  width: 100svw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.hero-container {
+  background-color: var(--light-bg-translucent);
+  border-radius: 8px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+  padding: 15px 20px;
+  margin: 20px;
+}
+.hero-title {
+  font-size: var(--font-size-xl);
+}
+
+/* ANIMATION KEYFRAMES */
+
+@keyframes slideshow {
+  0% {
+    background-image: url(../../assets/dg\ nita\ -\ i.jpeg);
+  }
+  33% {
+    background-image: url(../../assets/dg-ursula-hero-bg.png);
+  }
+  66% {
+    background-image: url(../../assets/group-hero-bg.png);
+  }
+  100% {
+    background-image: url(../../assets/dg\ nita\ -\ i.jpeg);
+  }
+}
