@@ -139,6 +139,16 @@ nav {
   font-size: var(--font-size-xl);
 }
 
+/* EVENT DETAILS */
+.event-img {
+  height: 80svh;
+  width: 100svw;
+  border-radius: 25px;
+  border: 2px solid black;
+  margin: 20px 0;
+  background: url(../../assets/dg-hero-bg.jpg) no-repeat cover;
+}
+
 /* ANIMATION KEYFRAMES */
 
 @keyframes slideshow {
