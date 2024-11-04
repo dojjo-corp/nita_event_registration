@@ -24,7 +24,7 @@
   box-sizing: border-box;
   /* outline: 2px solid red; */
 }
- /* *>* {
+/* *>* {
   outline: 1px solid yellow
  }
  *>*>* {
@@ -60,12 +60,17 @@ body {
   /* background: url(../../assets/dg\ nita\ -\ i.jpeg) no-repeat; */
   background-size: cover;
   background-repeat: no-repeat;
+
+  height: 100svh;
+  width: 100svw;
+
+}
+
+#landing-body {
   animation: slideshow;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-duration: 20s;
-  height: 100svh;
-  width: 100svw;
 }
 
 header {
@@ -87,7 +92,7 @@ header {
   /* outline: 1px solid black; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 nav {
@@ -109,7 +114,6 @@ nav {
   justify-content: space-around;
   list-style-type: none;
 }
-
 
 /* HERO SECTION */
 #hero-section {
