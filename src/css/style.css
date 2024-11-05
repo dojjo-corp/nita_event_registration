@@ -58,19 +58,8 @@ button,
 body {
   font-family: "Inter";
   /* background: url(../../assets/dg\ nita\ -\ i.jpeg) no-repeat; */
-  background-size: cover;
-  background-repeat: no-repeat;
-
   height: 100svh;
   width: 100svw;
-
-}
-
-#landing-body {
-  animation: slideshow;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
 }
 
 header {
@@ -122,6 +111,10 @@ nav {
   display: flex;
   justify-content: start;
   align-items: center;
+  animation: slideshow;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
 }
 .hero-container {
   background-color: var(--light-bg-translucent);
@@ -142,11 +135,10 @@ nav {
 /* EVENT DETAILS */
 .event-img {
   height: 80svh;
-  width: 100svw;
+  width: 100%;
   border-radius: 25px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin: 20px 0;
-  background: url(../../assets/dg-hero-bg.jpg) no-repeat cover;
 }
 
 /* ANIMATION KEYFRAMES */

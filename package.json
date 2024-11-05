@@ -2,7 +2,10 @@
   "name": "event_registration",
   "version": "1.0.0",
   "description": "event registration portal for nita",
+  "source": "src/index.html",
   "scripts": {
+    "start": "parcel",
+    "build": "parcel build --dist-dir public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

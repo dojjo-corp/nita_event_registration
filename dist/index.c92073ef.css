@@ -1,0 +1,150 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap";
+:root {
+  scroll-behavior: smooth;
+  --light-bg: #f6f2f2;
+  --light-bg-translucent: #d9d9d9c1;
+  --dark-bg: #000;
+  --light-text: #fff;
+  --dark-text: #000;
+  --font-size-vl: 61px;
+  --font-size-xxxl: 49px;
+  --font-size-xxl: 39px;
+  --font-size-xl: 31px;
+  --font-size-lg: 25px;
+  --font-size-md: 20px;
+  --font-size-sm: 16px;
+  --font-size-xs: 13px;
+  --font-size-xxs: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button, .btn {
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 13.3px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-dark {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+.btn-group {
+  gap: 15px;
+  display: flex;
+}
+
+body {
+  width: 100svw;
+  height: 100svh;
+  font-family: Inter;
+}
+
+header {
+  background-color: var(--light-bg-translucent);
+  border: none;
+  border-radius: 0 0 40px 40px;
+}
+
+.logo {
+  gap: 10px;
+  padding: 15px 0;
+  display: flex;
+}
+
+.logo-img {
+  border-right: 2px solid #000;
+}
+
+.logo-text {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.nav-link {
+  color: var(--dark-text);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--dark-text-hover);
+}
+
+.nav-container > ul {
+  justify-content: space-around;
+  gap: 30px;
+  list-style-type: none;
+  display: flex;
+}
+
+#hero-section {
+  justify-content: start;
+  align-items: center;
+  width: 100svw;
+  height: calc(100svh - 86px);
+  animation: 20s ease-in-out infinite slideshow;
+  display: flex;
+}
+
+.hero-container {
+  background-color: var(--light-bg-translucent);
+  border-radius: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+  width: 500px;
+  margin: 20px;
+  padding: 15px 20px;
+  display: flex;
+}
+
+.hero-title {
+  font-size: var(--font-size-xl);
+}
+
+.event-img {
+  border-radius: 25px;
+  width: 100%;
+  height: 80svh;
+  margin: 20px 0;
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url("dg nita - i.bd0cd430.jpeg");
+  }
+
+  33% {
+    background-image: url("dg-ursula-hero-bg.3cbad54d.png");
+  }
+
+  66% {
+    background-image: url("group-hero-bg.c65dc6e5.png");
+  }
+
+  100% {
+    background-image: url("dg nita - i.bd0cd430.jpeg");
+  }
+}
+/*# sourceMappingURL=index.c92073ef.css.map */

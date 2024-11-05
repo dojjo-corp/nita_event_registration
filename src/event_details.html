@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/event_details.css">
   </head>
   <body id="details">
     <header>
@@ -36,15 +37,15 @@
               <a href="index.html" class="nav-link">
                 <li>Home</li>
               </a>
-              <a href="about.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <li>About</li>
               </a>
             </ul>
           </div>
         </div>
         <div class="btn-group" id="auth-button-container">
-          <a role="button" href="auth/login.html" class="btn">Login</a>
-          <a role="button" href="auth/signup.html" class="btn btn-dark"
+          <a role="button" href="#" class="btn">Login</a>
+          <a role="button" href="#" class="btn btn-dark"
             >Sign up</a
           >
         </div>
@@ -53,9 +54,7 @@
 
     <main>
       <div class="container-fluid">
-        <div class="event-img">
-            
-        </div>
+        <div class="event-img"></div>
 
         <div class="container-fluid">
           <div class="row">
@@ -108,20 +107,26 @@
             <div class="col-4">
               <div class="registration-form">
                 <form action="#" method="post">
+                  <!-- fullname -->
+                  <!-- email -->
+                  <!-- contact -->
+                  <!-- dropdown for vip or regular -->
                   <label for="fullname">Fullname</label>
                   <input id="fullname" name="fullname" type="text" />
 
-                  <label for="fullname">Fullname</label>
-                  <input id="fullname" name="fullname" type="text" />
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" />
 
-                  <label for="fullname">Fullname</label>
-                  <input id="fullname" name="fullname" type="text" />
+                  <label for="contact">Contact</label>
+                  <input id="contact" name="contact" type="tel" />
 
-                  <label for="fullname">Fullname</label>
-                  <input id="fullname" name="fullname" type="text" />
+                  <label for="participant_type">Participant type</label>
+                  <select name="participant_type" id="participant_type">
+                    <option value="vip">VIP</option>
+                    <option value="regular">Regular</option>
+                  </select>
 
-                  <label for="fullname">Fullname</label>
-                  <input id="fullname" name="fullname" type="text" />
+                  <button class="btn btn-dark">Submit</button>
                 </form>
               </div>
             </div>
@@ -134,5 +139,7 @@
       src="https://kit.fontawesome.com/4dd428c11e.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
