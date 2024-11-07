@@ -8,6 +8,8 @@
       content="The NITA Event Registration Portal is the one stop portal for all Government Events."
     />
     <title>Event Details</title>
+
+    <!-- TODO: BOOTSTRAP CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -51,29 +53,88 @@
         </div>
       </nav>
     </header>
-
-    <main>
-      <div id="hero-section">
-        <div class="hero-container">
-          <strong class="hero-title"> Stay Informed And Connected!</strong>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
-            doloremque dolor est, repellat, laborum labore, accusamus beatae
-            quis nesciunt enim officia quasi excepturi ipsam sed optio
-            distinctio velit ipsa fugiat!
-          </p>
-          <h3 class="h3">Please click the button to register now!</h3>
-          <button class="btn btn-dark">Register</button>
+    <div id="hero-section. container-fluid">
+      <!-- TODO: CAROUSEL FOR BACKGROUND IMAGES -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../assets/dg nita - i.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/dg-hero-bg-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/dg-hero-bg.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
         </div>
       </div>
 
+      <!-- TODO: HERO CONTAINER -->
+      <!-- <div class="hero-container">
+        <strong class="hero-title"> Stay Informed And Connected!</strong>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+          doloremque dolor est, repellat, laborum labore, accusamus beatae quis
+          nesciunt enim officia quasi excepturi ipsam sed optio distinctio velit
+          ipsa fugiat!
+        </p>
+        <h3 class="h3">Please click the button to register now!</h3>
+        <button class="btn btn-dark">Register</button>
+      </div> -->
+    </div>
+
+    <main>
       <!-- todo: EVENTS LIST -->
       <section id="all-events">
+        <h2 class="section-topic mt-3">All Events</h2>
         <div class="container-fluid">
           <div class="row">
             <div class="col-3 col-md-6 col-sm-12 my-3">
               <div class="card" style="max-width: 18rem">
-                <img src="../assets/dg nita - i.jpeg" style="height: 200px;" class="card-img-top" alt="..." />
+                <img
+                  src="../assets/dg nita - i.jpeg"
+                  style="height: 200px"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -81,15 +142,20 @@
                     up the bulk of the card's content.
                   </p>
                   <a href="event_details.html" class="btn btn-dark"
-                    >Go somewhere</a
+                    >Read more</a
                   >
                 </div>
               </div>
             </div>
-            
+
             <div class="col-3 col-md-6 col-sm-12 my-3">
               <div class="card" style="max-width: 18rem">
-                <img src="../assets/dg-hero-bg-2.jpg" style="height: 200px;" class="card-img-top" alt="..." />
+                <img
+                  src="../assets/dg-hero-bg-2.jpg"
+                  style="height: 200px"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -97,15 +163,21 @@
                     up the bulk of the card's content.
                   </p>
                   <a href="event_details.html" class="btn btn-dark"
-                    >Go somewhere</a
+                    >Read more</a
                   >
                 </div>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
     </main>
+
+    <!-- todo: BOOTSTRAP javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

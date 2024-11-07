@@ -7,5 +7,5 @@ nameElem.addEventListener("input", (e) => {
 
     // send reauest with input element's value
 
-    // retrive
+    // retrive       
 })
