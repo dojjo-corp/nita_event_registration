@@ -7,16 +7,28 @@
       name="description"
       content="The NITA Event Registration Portal is the one stop portal for all Government Events."
     />
-    <title>Document</title>
+    <title>Event Details</title>
+
+    <!-- TODO: BOOTSTRAP CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
+<<<<<<< HEAD
   <body id="home-body">
+=======
+  <body id="landing-body">
+>>>>>>> dfcd92fbebb59cb8fc1de4974d573f566f7b8c4c
     <header>
       <nav>
         <div class="logo">
           <img
-          class="logo-img"
+            class="logo-img"
             src="../assets/nita-logo-no-bg.png"
             alt="Nita Logo"
             width="150px"
@@ -33,35 +45,213 @@
               <a href="#" class="nav-link">
                 <li>Home</li>
               </a>
-              <a href="about.html" class="nav-link">
+              <a href="#" class="nav-link">
                 <li>About</li>
               </a>
             </ul>
           </div>
         </div>
-        <div class="btn-group" id="auth-button-container">
-          <a role="button" href="auth/login.html" class="btn">Login</a>
-          <a role="button" href="auth/signup.html" class="btn btn-dark"
-            >Sign up</a
-          >
+        <div class="" id="auth-button-container">
+          <!-- TODO: SEARCH BAR -->
+          <div className="search-bar mx-auto d-flex gap-2">
+            <div className="">
+              <input
+              class="search-bar"
+                type="text"
+                placeholder="Search events"
+                value=""
+              />
+            </div>
+            <span className="icon-container">
+              <i className="fa-solid fa-magnifying-glass fa-beat-fade"></i>
+            </span>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main>
-      <div id="hero-section">
-        <div class="hero-container">
-          <strong class="hero-title"> Stay Informed And Connected!</strong>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
-            doloremque dolor est, repellat, laborum labore, accusamus beatae
-            quis nesciunt enim officia quasi excepturi ipsam sed optio
-            distinctio velit ipsa fugiat!
-          </p>
-          <h3 class="h3">Please click the button to register now!</h3>
-          <button class="btn btn-dark">Register</button>
+
+    <div id="hero-section. container-fluid">
+      <!-- TODO: CAROUSEL FOR BACKGROUND IMAGES -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../assets/dg nita - i.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/dg-hero-bg-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../assets/dg-hero-bg.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
         </div>
       </div>
+
+      <!-- TODO: HERO CONTAINER -->
+      <div class="hero-container">
+        <strong class="hero-title"> Stay Informed And Connected!</strong>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+          doloremque dolor est, repellat, laborum labore, accusamus beatae quis
+          nesciunt enim officia quasi excepturi ipsam sed optio distinctio velit
+          ipsa fugiat!
+        </p>
+        <h3 class="h3">Please click the button to register now!</h3>
+        <a href="#all-events" class="btn btn-dark">Register</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- todo: EVENTS LIST -->
+      <section id="all-events">
+        <h2 class="section-topic mt-3">All Events</h2>
+        <div class="container-fluid" id="">
+          <div class="row gx-3">
+            <div
+              class="card col-3 col-md-6 col-sm-12 m-3"
+              style="max-width: 18rem"
+            >
+              <img
+                src="../assets/dg nita - i.jpeg"
+                style="height: 200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="event_details.html" class="btn btn-dark">Read more</a>
+              </div>
+            </div>
+
+            <div
+              class="card col-3 col-md-6 col-sm-12 m-3"
+              style="max-width: 18rem"
+            >
+              <img
+                src="../assets/dg nita - i.jpeg"
+                style="height: 200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="event_details.html" class="btn btn-dark">Read more</a>
+              </div>
+            </div>
+            <div
+              class="card col-3 col-md-6 col-sm-12 m-3"
+              style="max-width: 18rem"
+            >
+              <img
+                src="../assets/dg nita - i.jpeg"
+                style="height: 200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="event_details.html" class="btn btn-dark">Read more</a>
+              </div>
+            </div>
+
+            <div
+              class="card col-3 col-md-6 col-sm-12 m-3"
+              style="max-width: 18rem"
+            >
+              <img
+                src="../assets/dg nita - i.jpeg"
+                style="height: 200px"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="event_details.html" class="btn btn-dark">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="all_events.html" class="btn">See more</a>
+      </section>
     </main>
+
+    <footer>
+      <div class="container-fluid">
+        <p class="footer-copyright">
+          All rights reserved. Made By Front End Team ®
+        </p>
+      </div>
+    </footer>
+
+    <!-- todo: BOOTSTRAP javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- todo: font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/4dd428c11e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- todo: custom js -->
+     <script src="js/index.js"></script>
   </body>
 </html>
