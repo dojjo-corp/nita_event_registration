@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
+@import "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap";
 :root {
   scroll-behavior: smooth;
   --light-bg: #f6f2f2;
-  --light-bg-translucent: hsla(0, 0%, 85%, 0.755);
-  --dark-bg: #000000;
-  --light-text: #ffffff;
-  --dark-text: #000000;
+  --light-bg-translucent: #d9d9d9c1;
+  --dark-bg: #000;
+  --light-text: #fff;
+  --dark-text: #000;
   --font-size-vl: 61px;
   --font-size-xxxl: 49px;
   --font-size-xxl: 39px;
@@ -19,134 +18,128 @@
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  /* outline: 2px solid red; */
+  margin: 0;
+  padding: 0;
 }
-/* *>* {
-  outline: 1px solid yellow
- }
- *>*>* {
-  outline: 1px solid green
- } */
 
-/* BUTTONS */
-button,
-.btn {
-  padding: 15px 25px;
-  border: none;
-  border-radius: 5px;
+button, .btn {
   background-color: var(--light-bg);
   color: var(--dark-text);
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
   font-size: 13.3px;
   font-weight: bold;
   text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  /* margin: 10px 0; */
 }
+
 .btn-dark {
   background-color: var(--dark-bg);
   color: var(--light-text);
 }
+
 .btn-group {
-  display: flex;
   gap: 15px;
+  display: flex;
 }
 
 #home-body {
-  font-family: "Inter";
-  /* background: url(../../assets/dg\ nita\ -\ i.jpeg) no-repeat; */
-  background-size: cover;
   background-repeat: no-repeat;
-  animation: slideshow;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  height: 100svh;
+  background-size: cover;
   width: 100svw;
+  height: 100svh;
+  font-family: Inter;
+  animation: 20s ease-in-out infinite slideshow;
 }
 
 header {
   background-color: var(--light-bg-translucent);
   border: none;
   border-radius: 0 0 40px 40px;
-  /* padding: 20px; */
 }
 
 .logo {
-  display: flex;
   gap: 10px;
   padding: 15px 0;
-}
-.logo-img {
-  border-right: 2px solid black;
-}
-.logo-text {
-  /* outline: 1px solid black; */
   display: flex;
+}
+
+.logo-img {
+  border-right: 2px solid #000;
+}
+
+.logo-text {
   flex-direction: column;
   justify-content: space-between;
+  display: flex;
 }
 
 nav {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
 }
+
 .nav-link {
+  color: var(--dark-text);
   font-weight: bold;
   text-decoration: none;
-  color: var(--dark-text);
 }
+
 .nav-link:hover {
   color: var(--dark-text-hover);
 }
+
 .nav-container > ul {
-  display: flex;
-  gap: 30px;
   justify-content: space-around;
+  gap: 30px;
   list-style-type: none;
+  display: flex;
 }
 
-/* HERO SECTION */
 #hero-section {
-  height: calc(100svh - 86px);
-  width: 100svw;
-  display: flex;
   justify-content: start;
   align-items: center;
+  width: 100svw;
+  height: calc(100svh - 86px);
+  display: flex;
 }
+
 .hero-container {
   background-color: var(--light-bg-translucent);
   border-radius: 8px;
-  width: 500px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
   align-items: start;
-  padding: 15px 20px;
+  gap: 10px;
+  width: 500px;
   margin: 20px;
+  padding: 15px 20px;
+  display: flex;
 }
+
 .hero-title {
   font-size: var(--font-size-xl);
 }
 
-/* ANIMATION KEYFRAMES */
-
 @keyframes slideshow {
   0% {
-    background-image: url(../../assets/dg\ nita\ -\ i.jpeg);
+    background-image: url("dg nita - i.bd0cd430.jpeg");
   }
+
   33% {
-    background-image: url(../../assets/dg-ursula-hero-bg.png);
+    background-image: url("dg-ursula-hero-bg.3cbad54d.png");
   }
+
   66% {
-    background-image: url(../../assets/group-hero-bg.png);
+    background-image: url("group-hero-bg.c65dc6e5.png");
   }
+
   100% {
-    background-image: url(../../assets/dg\ nita\ -\ i.jpeg);
+    background-image: url("dg nita - i.bd0cd430.jpeg");
   }
 }
+/*# sourceMappingURL=index.c92073ef.css.map */

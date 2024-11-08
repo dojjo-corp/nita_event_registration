@@ -1,4 +1,4 @@
 node_modules/
 # src/
-parcel_cache/
+.parcel-cache/
 
