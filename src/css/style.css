@@ -57,7 +57,7 @@ button,
 
 body {
   font-family: "Inter";
-  font-size: 0.85rem; 
+  font-size: 0.85rem;
   /* background: url(../../assets/dg\ nita\ -\ i.jpeg) no-repeat; */
   height: 100svh;
   width: 100svw;
@@ -67,7 +67,7 @@ header {
   background-color: var(--light-bg-translucent);
   border: none;
   border-radius: 0 0 40px 40px;
-  /* padding: 20px; */
+  padding: 0px 15px ;
 }
 
 .logo {
@@ -104,12 +104,49 @@ nav {
   justify-content: space-around;
   list-style-type: none;
 }
+.search-bar {
+
+}
+.search-icon {
+  padding: "10px";
+  border: "none";
+  border-radius: "10px";
+  background-color: "#e8eaedc7";
+  cursor: "pointer";
+}
+.search-bar {
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-copyright {
+  align-items: center;
+  text-align: center;
+}
+/* SECTIONS */
+section {
+  padding: 20px 30px ;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+}
+.section-topic {
+  text-align: center;
+  align-self: center;
+}
 
 /* HERO SECTION */
 #hero-section {
   height: calc(100svh - 86px);
   width: 100svw;
   display: flex;
+  position: relative;
   justify-content: start;
   align-items: center;
   animation: slideshow;
@@ -128,9 +165,17 @@ nav {
   align-items: start;
   padding: 15px 20px;
   margin: 20px;
+  position: absolute;
+  top: 35%;
+  left: 30px;
 }
 .hero-title {
   font-size: var(--font-size-xl);
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* EVENT DETAILS */
@@ -143,6 +188,18 @@ nav {
 }
 
 /* ANIMATION KEYFRAMES */
+
+@keyframes search-animation {
+  0% {
+    width: 208px;
+  }
+  50% {
+    width: 250px;
+  }
+  100% {
+    width: 300px;
+  }
+}
 
 @keyframes slideshow {
   0% {

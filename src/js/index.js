@@ -9,3 +9,9 @@ nameElem.addEventListener("input", (e) => {
 
     // retrive       
 })
+
+// todo: search bar animation
+const searchBarElem = document.querySelector(".search-bar");
+searchBarElem.addEventListener("focus", (e) => { 
+    e.target.style.animation = "search-animation";
+})
