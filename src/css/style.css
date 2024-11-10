@@ -77,14 +77,17 @@ header {
 
 .logo {
   display: flex;
+  justify-self: start;
   gap: 10px;
   padding: 15px 0;
+  height: 80px;
 }
 .logo-img {
   border-right: 2px solid black;
 }
 .logo-text {
   /* outline: 1px solid black; */
+  font-size: var(--font-size-xs);
   color: rgba(13, 12, 12, 0.919);
   display: flex;
   flex-direction: column;
@@ -95,6 +98,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: start;
 }
 .nav-link {
   font-weight: bold;
@@ -108,14 +115,16 @@ nav {
   display: flex;
   gap: 30px;
   justify-content: space-around;
+  align-items: center;
   list-style-type: none;
+  margin-bottom: 0;
 }
 .search-bar {
   border: none;
   border-radius: 10px;
   padding: 10px 12px;
   background-color: var(--white);
-  width: 70%; 
+  width: 70%;
   min-width: 200px;
 }
 .search-icon {
@@ -203,6 +212,12 @@ section {
   object-fit: cover;
 }
 
+/* ELL EVENTS */
+#all-events .row {
+  align-items: center;
+  justify-content: center;
+  /* outline: 2px solid black; */
+}
 /* EVENT DETAILS */
 .event-img {
   height: 80svh;
@@ -211,6 +226,7 @@ section {
   /* border: 2px solid black; */
   margin: 20px 0;
 }
+
 
 /* ANIMATION KEYFRAMES */
 
