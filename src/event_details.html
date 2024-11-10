@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Details</title>
 
+    <!-- TODO: BOOTSTRAP CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,8 +13,10 @@
       crossorigin="anonymous"
     />
 
+    <!-- TODO: general custom stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/event_details.css">
+    <!-- TODO: page custom stylesheet -->
+    <link rel="stylesheet" href="css/event_details.css" />
   </head>
   <body id="details">
     <header>
@@ -45,9 +48,7 @@
         </div>
         <div class="btn-group" id="auth-button-container">
           <a role="button" href="#" class="btn">Login</a>
-          <a role="button" href="#" class="btn btn-dark"
-            >Sign up</a
-          >
+          <a role="button" href="#" class="btn btn-dark">Sign up</a>
         </div>
       </nav>
     </header>
@@ -122,6 +123,7 @@
 
                   <label for="participant_type">Participant type</label>
                   <select name="participant_type" id="participant_type">
+                    <option value="none">Select participant type</option>ss
                     <option value="vip">VIP</option>
                     <option value="regular">Regular</option>
                   </select>

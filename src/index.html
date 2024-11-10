@@ -19,64 +19,49 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-<<<<<<< HEAD
-  <body id="home-body">
-=======
   <body id="landing-body">
->>>>>>> dfcd92fbebb59cb8fc1de4974d573f566f7b8c4c
-    <header>
-      <nav>
-        <div class="logo">
-          <img
-            class="logo-img"
-            src="../assets/nita-logo-no-bg.png"
-            alt="Nita Logo"
-            width="150px"
-          />
-          <strong class="logo-text">
-            Event <br />
-            Registration <br />
-            Portal
-          </strong>
-        </div>
-        <div class="navbar">
-          <div class="nav-container">
-            <ul>
-              <a href="#" class="nav-link">
-                <li>Home</li>
-              </a>
-              <a href="#" class="nav-link">
-                <li>About</li>
-              </a>
-            </ul>
-          </div>
-        </div>
-        <div class="" id="auth-button-container">
-          <!-- TODO: SEARCH BAR -->
-          <div className="search-bar mx-auto d-flex gap-2">
-            <div className="">
-              <input
-              class="search-bar"
-                type="text"
-                placeholder="Search events"
-                value=""
-              />
-            </div>
-            <span className="icon-container">
-              <i className="fa-solid fa-magnifying-glass fa-beat-fade"></i>
-            </span>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-
     <div id="hero-section. container-fluid">
+      <!-- TODO;  NITA HEADER -->
+      <header>
+        <nav>
+          <div class="logo">
+            <img
+              class="logo-img"
+              src="../assets/nita-logo-no-bg.png"
+              alt="Nita Logo"
+              width="150px"
+            />
+            <strong class="logo-text">
+              Event <br />
+              Registration <br />
+              Portal
+            </strong>
+          </div>
+          <div class="navbar">
+            <div class="nav-container">
+              <ul>
+                <a href="#" class="nav-link">
+                  <li>Home</li>
+                </a>
+                <a href="#" class="nav-link">
+                  <li>About</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="" id="auth-button-container">
+            <!-- TODO: SEARCH BAR -->
+             <div></div>
+          </div>
+        </nav>
+      </header>
+
       <!-- TODO: CAROUSEL FOR BACKGROUND IMAGES -->
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
         data-bs-ride="carousel"
+        style="height: 100svh"
       >
         <div class="carousel-indicators">
           <button
@@ -102,25 +87,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="../assets/dg nita - i.jpeg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src="../assets/dg nita - i.jpeg" class="" alt="..." />
           </div>
           <div class="carousel-item">
-            <img
-              src="../assets/dg-hero-bg-2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src="../assets/dg-hero-bg-2.jpg" class="" alt="..." />
           </div>
           <div class="carousel-item">
-            <img
-              src="../assets/dg-hero-bg.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src="../assets/dg-hero-bg.jpg" class="" alt="..." />
           </div>
         </div>
       </div>
@@ -143,7 +116,18 @@
       <!-- todo: EVENTS LIST -->
       <section id="all-events">
         <h2 class="section-topic mt-3">All Events</h2>
-        <div class="container-fluid" id="">
+        <div class="search-bar mx-auto d-flex gap-2">
+          <span class="icon-container">
+            <i class="fa-solid fa-magnifying-glass fa-beat-fade"></i>
+          </span>
+          <input
+            class="search-bar-input"
+            type="text"
+            placeholder="Search events.."
+            value=""
+          />
+        </div>
+        <div class="container-fluid d-flex" id="">
           <div class="row gx-3">
             <div
               class="card col-3 col-md-6 col-sm-12 m-3"
@@ -252,6 +236,6 @@
     ></script>
 
     <!-- todo: custom js -->
-     <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
