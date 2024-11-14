@@ -54,25 +54,27 @@
     </header>
 
     <main>
-      <div class="container-fluid">
+      <div class="container-fluid p-0">
         <div class="event-img"></div>
 
         <div class="container-fluid">
           <div class="row">
             <!-- todo: Event Details -->
-            <div class="col-8 details-img">
-              <h2>Bold Event Name</h2>
-              <span>
-                <i class="fa-solid fa-house"></i>
-                Residence
-              </span>
-              <div class="rating">
-                <i class="fa-solid fa-star" style="color: #ffd43b"></i>
-                4.5 Review
-              </div>
+            <div class="col-md-8 col-sm-12 details-img">
+              <section id="event-intro">
+                <h2>Bold Event Name</h2>
+                <span>
+                  <i class="fa-solid fa-house"></i>
+                  Residence
+                </span>
+                <div class="rating">
+                  <i class="fa-solid fa-star" style="color: #ffd43b"></i>
+                  4.5 Review
+                </div>
+              </section>
 
               <!-- todo: Overview of event -->
-              <section id="overview">
+              <!-- <section id="overview">
                 <h3>Overview</h3>
                 <div class="container-fluid">
                   <div class="container-fluid">
@@ -82,7 +84,7 @@
                     </div>
                   </div>
                 </div>
-              </section>
+              </section> -->
 
               <section id="description">
                 <h3>Description</h3>
@@ -105,15 +107,24 @@
             </div>
 
             <!-- todo: Event Details -->
-            <div class="col-4">
-              <div class="registration-form">
-                <form action="#" method="post">
+            <div
+              class="col-md-4 col-sm-12 justify-content-center align-items-center"
+            >
+              <section class="registration-form">
+                <h3 class="section-title">Registration Form</h3>
+
+                <!-- TODO: MAIN REGISTRATION FORM -->
+                <form method="post" id="main-form"> 
                   <!-- fullname -->
                   <!-- email -->
                   <!-- contact -->
                   <!-- dropdown for vip or regular -->
-                  <label for="fullname">Fullname</label>
-                  <input id="fullname" name="fullname" type="text" />
+
+                  <label for="firstname">First name</label>
+                  <input id="firstname" name="firstname" type="text" />
+
+                  <label for="lastname">Last name</label>
+                  <input id="lastname" name="lastname" type="text" />
 
                   <label for="email">Email</label>
                   <input id="email" name="email" type="email" />
@@ -121,21 +132,33 @@
                   <label for="contact">Contact</label>
                   <input id="contact" name="contact" type="tel" />
 
-                  <label for="participant_type">Participant type</label>
-                  <select name="participant_type" id="participant_type">
-                    <option value="none">Select participant type</option>ss
-                    <option value="vip">VIP</option>
-                    <option value="regular">Regular</option>
-                  </select>
-
-                  <button class="btn btn-dark">Submit</button>
+                  <!-- <button class="btn btn-dark submit-btn" frm>Submit</button> -->
+                   <a href="" class="btn btn-dark submit-btn">Submit</a>
                 </form>
-              </div>
+
+                <!-- todo: OTP CONFIRMATION FORM -->
+
+                <form action="#" method="post" class="" id="otp-form">
+
+                  <label for="otp">Enter code sent to your email</label>
+                  <input id="otp" name="otp" type="text">
+
+                  <a href="" class="btn btn-dark submit-btn">Submit</a>
+                </form>
+              </section>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <footer>
+      <div class="container-fluid">
+        <p class="footer-copyright">
+          All rights reserved. Made By Front End Team ®
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/4dd428c11e.js"
@@ -143,5 +166,6 @@
     ></script>
 
     <script src="js/index.js"></script>
+    <script src="js/event-details.js"></script>
   </body>
 </html>

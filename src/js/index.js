@@ -1,5 +1,5 @@
 const nameElem = document.querySelector("input[name=fullname]");
-nameElem.style.color = "red";
+// nameElem.style.color = "red";
 
 
 nameElem.addEventListener("input", (e) => {

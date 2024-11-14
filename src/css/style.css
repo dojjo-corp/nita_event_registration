@@ -17,6 +17,11 @@
   --font-size-sm: 16px;
   --font-size-xs: 13px;
   --font-size-xxs: 10px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --section-margin: 20px 25px;
+  --footer-margin: 20px 0;
 }
 
 * {
@@ -146,9 +151,13 @@ nav {
 }
 /* FOOTER */
 footer {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 25px;
+  margin: var(--footer-margin);
 }
 .footer-copyright {
   align-items: center;
@@ -156,10 +165,12 @@ footer {
 }
 /* SECTIONS */
 section {
+  border-radius: var(--radius-sm);
   padding: 20px 30px;
   display: flex;
   flex-direction: column;
   background-color: var(--light-bg);
+  margin: var(--section-margin);
 }
 .section-topic {
   text-align: center;
