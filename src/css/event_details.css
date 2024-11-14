@@ -1,7 +1,11 @@
 .event-img {
   background: url(../../assets/ursula\ bg.jpeg);
+  height: 80svh;
+  width: 100%;
+  border-radius: 25px;
+  /* border: 2px solid black; */
+  margin: 20px 0;
 }
-
 #overview {
   border-radius: 10px;
 }
