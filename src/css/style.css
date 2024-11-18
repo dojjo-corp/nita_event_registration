@@ -64,6 +64,12 @@ button,
 .btn-lg {
   width: 100% !important;
 }
+.scroll-down-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
 
 /* TEXTS */
 .grey-text {
@@ -242,12 +248,12 @@ section {
   object-fit: cover;
 }
 
-/* ALL EVENTS */
-#all-events {
+/* HOME EVENTS */
+#home-events {
   padding: 0;
   margin: 20px 0;
 }
-#all-events .row {
+.events-grid {
   gap: 10px;
   align-items: center;
   justify-content: center;
@@ -269,33 +275,7 @@ section {
   font-weight: bold;
 }
 
-/* EVENT DETAILS */
-
-/* ANIMATION KEYFRAMES */
-
-@keyframes search-animation {
-  0% {
-    width: 208px;
-  }
-  50% {
-    width: 250px;
-  }
-  100% {
-    width: 300px;
-  }
-}
-
-@keyframes slideshow {
-  0% {
-    background-image: url(../../assets/dg\ nita\ -\ i.jpeg);
-  }
-  33% {
-    background-image: url(../../assets/dg-ursula-hero-bg.png);
-  }
-  66% {
-    background-image: url(../../assets/group-hero-bg.png);
-  }
-  100% {
-    background-image: url(../../assets/dg\ nita\ -\ i.jpeg);
-  }
+/* ALL EVENTS PAGE */
+#all-events {
+  margin-top: 50px;
 }
